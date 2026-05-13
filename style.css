@@ -98,6 +98,12 @@ nav {
 
 .hero-content {
     max-width: 800px;
+    animation: fadeIn 1.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .badge {
@@ -112,6 +118,7 @@ nav {
     color: var(--accent-color);
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    animation: fadeIn 1.2s ease-out 0.2s backwards;
 }
 
 h1 {
@@ -121,6 +128,7 @@ h1 {
     line-height: 1.1;
     margin-bottom: 1.5rem;
     letter-spacing: -0.02em;
+    animation: fadeIn 1.2s ease-out 0.4s backwards;
 }
 
 .gradient-text {
@@ -136,12 +144,14 @@ p {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    animation: fadeIn 1.2s ease-out 0.6s backwards;
 }
 
 .hero-actions {
     display: flex;
     gap: 1.5rem;
     justify-content: center;
+    animation: fadeIn 1.2s ease-out 0.8s backwards;
 }
 
 .primary-btn {
